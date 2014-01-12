@@ -1,0 +1,178 @@
+/* 
+ *  RESET THE BROWSER TO UNIFORM
+ *  http://meyerweb.com/eric/tools/css/reset/ 
+ *  v2.0 | 20110126
+ *  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+
+
+/* BEGIN CUSTOM CSS HERE */
+body {
+	font-family: "Jose Sans","Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+nav {
+	display:block;
+	position:fixed;
+	width: 100%;
+	background-color: #e62914;
+	background-image: -moz-linear-gradient(top, #ef2d18, #d9230f);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ef2d18), to(#d9230f));
+	background-image: -webkit-linear-gradient(top, #ef2d18, #d9230f);
+	background-image: -o-linear-gradient(top, #ef2d18, #d9230f);
+	background-image: linear-gradient(to bottom, #ef2d18, #d9230f);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffef2d18', endColorstr='#ffd9230f', GradientType=0);
+	border-color: #f03621;
+}
+nav ul {
+	display: block;
+	margin: 0 auto;
+	height: 40px;
+	width: 800px;
+}
+nav ul li {
+	display: inline-block;
+	padding-top: 5px;
+	font-weight: 700;
+	font-size: 13px;
+}
+nav a:hover {
+	background-color: #d9230f;
+	border-color: #f03621;
+}
+nav a {
+	vertical-align: middle;
+	padding:10px;
+	text-decoration: none;
+	color:#FFFFFF;
+}
+nav .brand {
+	font-size: 20px;
+}
+nav .space-right {
+	margin-left: 200px;
+}
+
+section {
+	display:block;
+	width: 100%;
+}
+section .wrapper {
+	display: block;
+	margin: 0 auto;
+	padding: 30px;
+	width: 800px;
+}
+section .bold {
+	color: #707070;
+	font-weight: 700;
+}
+section a, footer a {
+	color: #d9230f;
+	text-decoration: none;
+	font-weight: 900;
+}
+section a:hover, footer a:hover {
+	opacity: .7;
+}
+
+h2 {
+	padding: 10px;
+	display:block;
+	font-size: 30px;
+	font-weight: 700;
+	color: #707070;
+}
+h3 {
+	padding: 10px;
+	display:block;
+	font-size: 25px;
+	color: #707070;
+}
+
+#splash {
+	height: 650px;
+	color: #909090;
+	text-align: center;
+	border-bottom: 5px double #909090;
+}
+
+#splash img {
+	display:block;
+	margin: 60px auto;
+}
+#splash p {
+	font-size: 20px;
+}
+
+#about-section {
+	background: url('../images/bedge_grunge.png');
+}
+#about-section p, #about-section ul li, #forOlin-section p {
+	padding: 10px 10px 10px 20px;
+	line-height: 1.3em;
+}
+
+#team-section, #forOlin-section {
+	background: url('../images/bedge_grunge.png');
+}
+
+#team-section .member {
+	display: inline-block;
+	vertical-align:top;
+	padding: 10px;
+	width: 375px;
+	line-height: 1.3em;
+	font-size: 15px;
+}
+#team-section .member img {
+	float: left;
+	margin-right: 20px;
+	width: 128px;
+	height: auto;
+}
+
+#forOlin-section .wrapper {
+	padding-top: 50px;
+}
+
+footer{
+	padding: 50px;
+	text-align: center;
+	color: #909090;
+	font-weight: 900;
+	background: #ffffff;
+	border-top: 5px double #909090;
+}
