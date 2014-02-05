@@ -43,7 +43,8 @@ body {
 	font-family: "Jose Sans","Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 nav {
-	display:block;
+	display:table;
+	text-align: center;
 	position:fixed;
 	width: 100%;
 	background-color: #e62914;
@@ -60,7 +61,7 @@ nav ul {
 	display: block;
 	margin: 0 auto;
 	height: 40px;
-	width: 800px;
+	color: #FFFFFF;
 }
 nav ul li {
 	display: inline-block;
@@ -93,7 +94,9 @@ section .wrapper {
 	display: block;
 	margin: 0 auto;
 	padding: 30px;
+	padding-top: 50px;
 	width: 800px;
+	min-height: 450px;
 }
 section .bold {
 	color: #707070;
@@ -106,6 +109,10 @@ section a, footer a {
 }
 section a:hover, footer a:hover {
 	opacity: .7;
+}
+section p, section ul li {
+	padding: 10px 10px 10px 20px;
+	line-height: 1.3em;
 }
 
 h2 {
@@ -133,23 +140,30 @@ h3 {
 	display:block;
 	margin: 60px auto;
 }
-#splash p {
+#splash p, #splash2 p {
 	font-size: 20px;
 }
 
-#about-section {
+#splash2 {
+	color: #909090;
+	text-align: center;
 	background: url('../images/bedge_grunge.png');
-}
-#about-section p, #about-section ul li, #forOlin-section p {
-	padding: 10px 10px 10px 20px;
-	line-height: 1.3em;
+	min-height: 450px;
+	padding: 60px 0;
 }
 
-#team-section, #forOlin-section {
+#splash2 .wrapper {
+	background: #FFFFFF;
+	padding: 50px;
+	min-height: 50px;
+	border-radius: 10px;
+}
+
+.background {
 	background: url('../images/bedge_grunge.png');
 }
 
-#team-section .member {
+.member {
 	display: inline-block;
 	vertical-align:top;
 	padding: 10px;
@@ -157,15 +171,11 @@ h3 {
 	line-height: 1.3em;
 	font-size: 15px;
 }
-#team-section .member img {
+.member img {
 	float: left;
 	margin-right: 20px;
 	width: 128px;
 	height: auto;
-}
-
-#forOlin-section .wrapper {
-	padding-top: 50px;
 }
 
 footer{
