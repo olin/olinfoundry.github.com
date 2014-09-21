@@ -129,19 +129,45 @@ h3 {
 	color: #707070;
 }
 
-#splash {
+#splash, #splash3 {
 	height: 650px;
 	color: #909090;
 	text-align: center;
 	border-bottom: 5px double #909090;
 }
-
+section#splash::after, section#splash3::after {
+	background: url("../images/fair.jpg") center center no-repeat;
+	background-size: 100%;
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: -1;
+	opacity: 0.5;
+}
+section#splash3::after {
+	background: url("../images/2012fair.png") center center no-repeat;
+	background-size: 100%;
+}
 #splash img {
 	display:block;
 	margin: 60px auto;
 }
-#splash p, #splash2 p {
+.display-text {
+	margin-top: 5em;
+}
+#splash p, .display-text {
+	background: rgba(220,220,220,0.6);
+	border-radius: 1em;
+	color: #353535;
+}
+#splash p, #splash2 p, #splash3 p {
 	font-size: 20px;
+}
+#splash3 p, #splash3 h2 {
+	color: #353535;
 }
 
 #splash2 {
