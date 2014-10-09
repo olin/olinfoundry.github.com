@@ -136,8 +136,11 @@ h3 {
 	border-bottom: 5px double #909090;
 }
 section#splash::after, section#splash3::after {
-	background: url("../images/fair.jpg") center center no-repeat;
-	background-size: 100%;
+	background: url("../images/startupfair/talk.jpg") center center no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 	content: '';
 	position: absolute;
 	top: 0;
@@ -145,20 +148,23 @@ section#splash::after, section#splash3::after {
 	right: 0;
 	bottom: 0;
 	z-index: -1;
-	opacity: 0.5;
+	opacity: 0.8;
 }
 section#splash3::after {
-	background: url("../images/2012fair.png") center center no-repeat;
-	background-size: 100%;
+	background: url("../images/startupfair/fair.jpg") center center no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
-#splash img {
+#splash img, #splash3 img {
 	display:block;
 	margin: 60px auto;
 }
 .display-text {
 	margin-top: 5em;
 }
-#splash p, .display-text {
+#splash p, #splash3 h2, .display-text {
 	background: rgba(220,220,220,0.6);
 	border-radius: 1em;
 	color: #353535;
@@ -202,6 +208,33 @@ section#splash3::after {
 	margin-right: 20px;
 	width: 128px;
 	height: auto;
+}
+
+/* STARTUP FAIR */
+.startups {
+	text-align:center;
+}
+.company {
+	display: inline-block;
+	margin: 0 auto;
+	padding: 1em;
+	width: 30em;
+	vertical-align:top;
+	text-align: center;
+}
+.company img {
+	width:5em;
+	border-radius:0.3em;
+	vertical-align:middle;
+}
+.company h1 {
+	font-size: 2em;
+	padding: 0.5em;
+	height:85px;
+	line-height: 85px;
+}
+.company p {
+	padding:0.5em;
 }
 
 footer{
