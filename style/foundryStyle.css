@@ -30,6 +30,9 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+html, body {
+	height: 100%;
+}
 body {
 	line-height: 1;
 }
@@ -130,7 +133,7 @@ h3 {
 }
 
 #splash, #splash3 {
-	height: 650px;
+	height: 100%;
 	color: #909090;
 	text-align: center;
 	border-bottom: 5px double #909090;
