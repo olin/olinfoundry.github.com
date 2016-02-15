@@ -59,6 +59,7 @@ nav {
 	background-repeat: repeat-x;
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffef2d18', endColorstr='#ffd9230f', GradientType=0);
 	border-color: #f03621;
+	z-index: 5000;
 }
 nav ul {
 	display: block;
